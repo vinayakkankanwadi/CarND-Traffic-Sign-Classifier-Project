@@ -19,9 +19,10 @@ Goals
 Files
 ---
 * [Traffic_Sign_Classifier.ipynb](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb) - Notebook file with all questions answered and all code cells executed and displaying output 
-* [Traffic_Sign_Classifier.html](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.html) - An HTML export of the project notebook with the name report.html or report.pdf.
-[code](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
-* README.md - written report to reflect the work writeup
+* [Report.html](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/blob/master/report.html) - An HTML export of the project notebook.
+* [Test-Images](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/tree/master/test-images)- Images used for the project that are not from the German Traffic Sign Dataset.
+* [German Traffic Sign Dataset ZIP](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5898cd6f_traffic-signs-data/traffic-signs-data.zip) - This is not included NEED TO BE DOWNLOADED, UNZIPPED and copy train.p, test.p and valid.p to [Traffic-signs-data](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/tree/master/traffic-signs-data) folder.
+* [README.md](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/blob/master/README.md) - Writeup report as a markdown to reflect the work.
 
 
 [//]: # (Image References)
