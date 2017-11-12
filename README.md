@@ -36,34 +36,28 @@ Files
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
-## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
----
-###Writeup / README
+### Step 1: Data Set Summary & Exploration
 
-####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
+#### 1a. Dataset Summary
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+I used the pandas library to calculate summary statistics of the traffic signs data set:
 
-###Data Set Summary & Exploration
+* The size of training set is 34799
+* The size of test set is 12630
+* The shape of a traffic sign image is (32, 32, 3)
+* The number of unique classes/labels in the data set is 43
 
-####1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+#### 1b. Exploratory Visualization
 
-I used the pandas library to calculate summary statistics of the traffic
-signs data set:
+The bar chart shows the data distribution of the training, testing and validation data. Each bar represents one class (traffic sign) and how many samples are in their respective class distribution. The mapping of traffic sign names to class id can be found here: [signnames.csv](./signnames.csv)
 
-* The size of training set is ?
-* The size of the validation set is ?
-* The size of test set is ?
-* The shape of a traffic sign image is ?
-* The number of unique classes/labels in the data set is ?
+![histogram](./writeup-images/Exploratory%20Visualization.png "histogram")
 
-####2. Include an exploratory visualization of the dataset.
+Sample traffic signs from the training data set. More can be found in the [jupyter notebook](./Traffic_Sign_Classifier.ipynb).
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+![Sample training images](./writeup-images/exploratory-visualization-sample.PNG "sample training images")
 
-![alt text][image1]
 
 ###Design and Test a Model Architecture
 
