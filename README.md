@@ -117,18 +117,30 @@ Adjustments:
 * Validation Accuracy = **96.0%**
 * Testing Accuracy = **94.3%**
 
-###Test a Model on New Images
+### Step 3: Test a Model on New Images
 
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+#### 3a. Acquiring New Images
 
-Here are five German traffic signs that I found on the web:
+Following are the German traffic signs used to test the model on New Images
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![New training images](./writeup-images/test-images.PNG "New training images")
 
-The first image might be difficult to classify because ...
+Quality or qualities might be difficult to classify
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+* Image1  - confusing rotated inside
+* Image2  - image not in classification
+* Image3  - confusing with speed
+* Image4  - confusing with other speeds
+* Image5  - noisy background
+* Image6  - angled image
+* Image7  - rotated image
+* Image8  - noisy background
+* Image9  - angled image
+* Image10 - noisy background
+
+#### 3b.Performance on New Images
+
+ 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
