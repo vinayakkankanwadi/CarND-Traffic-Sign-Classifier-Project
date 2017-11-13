@@ -76,7 +76,7 @@ Here is an example of an original image and pre-processed image:
 
 Convolutional neuronal network Model is used to classify the traffic signs. The input of the network is an 32x32x1 image and the output is the probabilty of each of the 43 possible traffic signs.
  
- My model consisted of the following layers:
+ Model consisted of the following layers:
 
 | Layer         		|     Description	        					| Input |Output| 
 |:---------------------:|:---------------------------------------------:| :----:|:-----:|
