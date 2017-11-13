@@ -148,24 +148,48 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 9 of the 12 traffic signs, which gives an accuracy of **75%**. This compares favorably to the accuracy on the test set of **94.3**
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+#### 3c.Model Certainty - Softmax Probabilities
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+**Predictions:**
+* Image 1 - [ 0.99664  0.00336  0.       0.       0.     ]
+* Image 2 - [ 0.99999  0.       0.       0.       0.     ]
+* Image 3 - [ 1.       0.       0.       0.       0.     ]
+* Image 4 - [ 0.98404  0.01327  0.00269  0.       0.     ]
+* Image 5 - [ 1.       0.       0.       0.       0.     ]
+* Image 6 - [ 1.       0.       0.       0.       0.     ]
+* Image 7 - [ 1.       0.       0.       0.       0.     ]
+* Image 8 - [ 1.       0.       0.       0.       0.     ]
+* Image 9 - [ 0.99879  0.00071  0.00021  0.00015  0.00006]
+* Image10 - [ 0.79382  0.2033   0.00107  0.00075  0.00037]
+* Image11 - [ 0.96896  0.03103  0.       0.       0.     ]
+* Image12 - [ 0.94491  0.05347  0.001    0.00035  0.00008]
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+**Labels:**
+* Image 1 - [23 20 10 11 38] - **Slippery road**
+* Image 2 - [14 17 34 38  9] - **Stop**
+* Image 3 - [15 12 26  4  9] - **No vehicles**
+* Image 4 - [ 8  2  3  5  7] - **Speed limit (120km/h)**
+* Image 5 - [ 9 16 12 10 35] - **No passing**
+* Image 6 - [12 25 15  9  3] - **Priority road**
+* Image 7 - [13  8 38  3 14] - **Yield**
+* Image 8 - [14 38 34 13  2] - **Stop**
+* Image 9 - [18 25 29 26 20] - **General caution**
+* Image10 - [11 18 27 24 25] - **Right-of-way at the next intersection**
+* Image11 - [33 26 14 35  4] - **Turn right ahead**
+* Image12 - [ 1 31  2 28 29] - **Speed limit (30km/h)**
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+Images the model was not able to classify accurately
+* Image2  - label 99 - This label is not present in classifier.
+* Image10 - Correct label 26 (Traffic Signal) - This is not in SoftMax probability of 5
+* Image12 - Correct label 25 (Road Work) - This is not in SoftMax probability of 5
+ 
 
+### (Optional) Visualizing the Neural Network
+#### Example 
+* Layer 1 - Convolution - It's possible to see shape of sign however with backgound noize.
+* ReLU-activation Noize level significantly reduced. 
+* Max-pooling - Image size reduced however important features are present.
 
-For the second image ... 
-
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+![Visualizing Neural Network](./writeup-images/visualization-nn.PNG "visualization neural network")
 
 
