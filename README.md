@@ -61,7 +61,7 @@ Sample traffic signs from the training data set. More can be found in the [jupyt
 
 ### Step 2: Design and Test a Model Architecture
 
-#### 2.a. Preprocessing
+#### 2a. Preprocessing
 Steps
 - Convert to Grayscale - Color unlikely to give any performance boost.
 - Normalization - to reduce the number of shades.
@@ -72,22 +72,22 @@ Here is an example of an original image and pre-processed image:
 ![Pre-process training images](./writeup-images/preprocessing.PNG "Pre-process training images")
 
 
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### 2b. Model Architecture
 
-My final model consisted of the following layers:
-
-| Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+Convolutional neuronal network Model is used to classify the traffic signs. The input of the network is an 32x32x1 image and the output is the probabilty of each of the 43 possible traffic signs.
  
+ My model consisted of the following layers:
+
+| Layer         		|     Description	        					| Input |Output| 
+|:---------------------:|:---------------------------------------------:| :----:|:-----:|
+| Convolution 5x5     	| 1x1 stride, valid padding, RELU activation 	|**32x32x1**|28x28x6|
+| Max pooling			| 2x2 stride		|28x28x6|14x14x6|
+| Convolution 5x5 	    | 1x1 stride, valid padding, RELU activation 	|14x14x6|10x10x16|
+| Max pooling			| 2x2 stride	   					|10x10x16|5x5x16|
+| Flatten				| 3 dimensions -> 1 dimension					|5x5x16| 400|
+| Fully Connected | connect, RELU, Dropout (keep prob = 0.75)			|400|120|
+| Fully Connected | connect, RELU, Dropout (keep prob = 0.75)   |120|84|
+| Fully Connected | connect, RELU, Dropout (keep prob = 0.75)  	|84|**43**|
 
 
 ####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
