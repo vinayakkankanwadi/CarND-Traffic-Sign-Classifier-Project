@@ -131,29 +131,22 @@ Quality or qualities might be difficult to classify
 * Image2  - image not in classification
 * Image3  - confusing with speed
 * Image4  - confusing with other speeds
-* Image5  - noisy background
-* Image6  - angled image
-* Image7  - rotated image
-* Image8  - noisy background
-* Image9  - angled image
+* Image5  - confusing image inside
+* Image6  - noisy background
+* Image7  - noisy background
+* Image8  - angled image
+* Image9  - rotated image
 * Image10 - noisy background
+* Image11 - angled image
+* Image12 - noisy background
 
 #### 3b.Performance on New Images
 
- 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
-
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+![Performance new images](./writeup-images/performance-new-images.PNG "Performance new images")
 
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 9 of the 12 traffic signs, which gives an accuracy of **75%**. This compares favorably to the accuracy on the test set of **94.3**
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
