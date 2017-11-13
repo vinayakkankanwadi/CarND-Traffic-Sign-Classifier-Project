@@ -182,7 +182,8 @@ Images the model was not able to classify accurately
 * Image2  - label 99 - This label is not present in classifier.
 * Image10 - Correct label 26 (Traffic Signal) - This is not in SoftMax probability of 5
 * Image12 - Correct label 25 (Road Work) - This is not in SoftMax probability of 5
- 
+
+**This probably indicates when it is certain it is reflecting in probability 1 and when it is not it does not make it into max 5 probability.**
 
 ### (Optional) Visualizing the Neural Network
 #### Example 
