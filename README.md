@@ -24,18 +24,7 @@ Files
 * [German Traffic Sign Dataset ZIP](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5898cd6f_traffic-signs-data/traffic-signs-data.zip) - This is not included NEED TO BE DOWNLOADED, UNZIPPED and copy train.p, test.p and valid.p to [Traffic-signs-data](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/tree/master/traffic-signs-data) folder.
 * [README.md](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/blob/master/README.md) - Writeup report as a markdown to reflect the work.
 
-
-[//]: # (Image References)
-
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
-
+---
 
 ### Step 1: Data Set Summary & Exploration
 
@@ -58,6 +47,7 @@ Sample traffic signs from the training data set. More can be found in the [jupyt
 
 ![Sample training images](./writeup-images/exploratory-visualization-sample.PNG "sample training images")
 
+---
 
 ### Step 2: Design and Test a Model Architecture
 
@@ -116,6 +106,8 @@ Adjustments:
 * Training Accuracy = **99.9%**
 * Validation Accuracy = **96.0%**
 * Testing Accuracy = **94.3%**
+
+---
 
 ### Step 3: Test a Model on New Images
 
@@ -193,4 +185,4 @@ Images the model was not able to classify accurately
 
 ![Visualizing Neural Network](./writeup-images/visualization-nn.PNG "visualization neural network")
 
-
+---
