@@ -101,6 +101,7 @@ The following global parameters were used to train the model.
 
 #### 2d. Solution Approach
 **Expected validation set accuracy to be at least 0.93**
+
 This solution based on modified LeNet-5 architecture. With the original LeNet-5 architecture, which resulted in validation set accuracy of about 0.921. 
 
 Adjustments:
