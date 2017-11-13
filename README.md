@@ -16,6 +16,13 @@ Goals
 * Step 5: Analyze the softmax probabilities of the new images
 * Step 6: Summarize the results with a written report
 
+Files
+---
+* [Traffic_Sign_Classifier.ipynb](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb) - Notebook file with all questions answered and all code cells executed and displaying output 
+* [Traffic_Sign_Classifier.html](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.html) - An HTML export of the project notebook with the name report.html or report.pdf.
+[code](https://github.com/vinayakkankanwadi/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+* README.md - written report to reflect the work writeup
+
 
 [//]: # (Image References)
 
