@@ -100,8 +100,7 @@ The following global parameters were used to train the model.
 * OPIMIZER: AdamOptimizer (LEARNING RATE = 0.001)
 
 #### 2d. Solution Approach
-** Expected validation set accuracy to be at least 0.93 **
-
+**Expected validation set accuracy to be at least 0.93**
 This solution based on modified LeNet-5 architecture. With the original LeNet-5 architecture, which resulted in validation set accuracy of about 0.921. 
 
 Adjustments:
@@ -112,7 +111,7 @@ Adjustments:
 * Training for more than 35 epochs did not increase the validation accuracy much however was trained for 50 epochs.
 * Dropout - keep probabily were in range 0.6-0.8.
 
-Final model results:
+**Final model results:**
 * Training Accuracy = **99.9%**
 * Validation Accuracy = **96.0%**
 * Testing Accuracy = **94.3%**
